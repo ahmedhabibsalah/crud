@@ -1,6 +1,7 @@
 import Head from "next/head";
 import { BiUserPlus } from "react-icons/bi";
 import Table from "../components/Table";
+import Form from "../components/Form";
 export default function Home() {
   return (
     <section>
@@ -19,10 +20,13 @@ export default function Home() {
             </button>
           </div>
         </div>
+        <div className="container mx-auto">
+          <Form />
+        </div>
+        <div className="container mx-auto">
+          <Table></Table>
+        </div>
       </main>
-      <div className="container mx-auto">
-        <Table></Table>
-      </div>
     </section>
   );
 }
