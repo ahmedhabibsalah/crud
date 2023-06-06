@@ -16,7 +16,7 @@ export default async function handler(req, res) {
       break;
     case "PUT":
       const updatedUser = await Users.findByIdAndUpdate(userId, formData);
-      res.status(200).json(user);
+      res.status(200).json(updatedUser);
       break;
 
     case "DELETE":
